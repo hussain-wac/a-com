@@ -1,10 +1,8 @@
 import React from 'react'
-
 async function fetchproducts() {
     const res = await fetch("https://api.escuelajs.co/api/v1/products", {
         cache : "no-store"
     })    
-
     if(!res.ok){
         throw new Error("Failed to fetch emploee details")
     }
@@ -13,11 +11,8 @@ async function fetchproducts() {
 }
 
 
-
-
 export default async function GetProducts() {
     const products = await fetchproducts()
-    console.log(products)
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
     {products.map((product) => (
