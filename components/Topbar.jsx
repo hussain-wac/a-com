@@ -1,5 +1,6 @@
-import React from 'react';
-import { Search, ShoppingCart } from 'lucide-react';
+import React from "react";
+import Link from "next/link";
+import { Search, ShoppingCart } from "lucide-react";
 
 function Topbar() {
   return (
@@ -7,7 +8,7 @@ function Topbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="text-white font-extrabold text-2xl">
-          E-Shop
+          <Link href="/">E-Shop</Link>
         </div>
 
         {/* Search Bar */}
@@ -24,6 +25,9 @@ function Topbar() {
 
         {/* Icons Section */}
         <div className="flex items-center space-x-6 text-white">
+          <Link href="/about" className="hover:underline">
+            About
+          </Link>
           <div className="relative">
             <ShoppingCart size={24} />
             <span className="absolute -top-2 -right-2 bg-red-500 text-xs w-5 h-5 flex items-center justify-center rounded-full">
