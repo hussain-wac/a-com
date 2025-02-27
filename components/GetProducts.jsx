@@ -10,7 +10,6 @@ async function fetchproducts() {
     return res.json()
 }
 
-
 export default async function GetProducts() {
     const products = await fetchproducts()
   return (
