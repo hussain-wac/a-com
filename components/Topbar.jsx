@@ -12,8 +12,8 @@ function Topbar() {
 
         {/* Search Bar */}
         <div className="flex flex-1 mx-4">
-          <input 
-            type="text"
+            <input 
+              type="text"
             placeholder="Search products..."
             className="w-full px-4 py-2 rounded-l-md focus:outline-none"
           />
