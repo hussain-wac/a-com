@@ -11,8 +11,6 @@ async function fetchproducts() {
 }
 
 
-
-
 export default async function GetProducts() {
     const products = await fetchproducts()
   return (
