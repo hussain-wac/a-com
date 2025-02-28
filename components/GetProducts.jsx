@@ -22,7 +22,7 @@ export default async function GetProducts() {
           className="w-full h-60 object-cover rounded-md"
         />
         <h2 className="text-xl font-semibold mt-2">{product.title}</h2>
-        <p className="text-gray-600 mt-1">${product.price}</p>
+        <p className="text-white-600 mt-1">${product.price}</p>
         <p className="text-sm text-white-500 mt-1">{product.description}</p>
       </div>
     ))}
