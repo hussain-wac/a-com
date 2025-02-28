@@ -10,5 +10,4 @@ function AuthNavBar() {
     </div>
   );
 }
-
 export default AuthNavBar;
