@@ -1,11 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import NavBarSwicher from "../components/NavBarSwitcher";
+import "../globals.css"
+import DefaultTopbar from "../../components/DefaultTopbar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
@@ -22,7 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavBarSwicher/>
+        <DefaultTopbar />
         {children}
       </body>
     </html>
