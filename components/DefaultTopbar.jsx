@@ -21,9 +21,9 @@ function DefaultTopbar() {
               3
             </span>
           </div>
-          <div className="cursor-pointer hover:underline">
-            Sign In
-          </div>
+          <Link href="/ " className="hover:underline">
+            signup
+          </Link>
         </div>
       </div>
     </header>
