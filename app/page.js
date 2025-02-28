@@ -1,9 +1,10 @@
+import GetProducts from '@/components/GetProducts'
 import React from 'react'
 
-function page() {
+function Home() {
   return (
-    <div>Hari's home</div>
+    <div>page</div>
   )
 }
 
-export default page
+export default Home
