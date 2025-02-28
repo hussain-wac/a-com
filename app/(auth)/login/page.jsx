@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { Form, useFormApi } from "informed";
 import CustomInput from "../../../components/CustomInput";
 import {
@@ -37,6 +38,17 @@ function Login() {
         >
           Login in
         </button>
+        <div className="flex p-2">
+        <p>Dont have an account yet ?</p>
+        <span>
+        <Link
+          className="text-blue-600 ml-3"
+          href='/signup'
+        >
+          click here
+        </Link>
+        </span>
+        </div>
       </Form>
     </div>
   );
