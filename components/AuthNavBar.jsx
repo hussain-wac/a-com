@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { Search, ShoppingCart } from "lucide-react";
 
-function Topbar() {
+function AuthNavBar() {
   return (
-    <header className="bg-blue-600 p-4">
+    <header className="bg-green-600 p-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo Section */}
         <div className="text-white font-extrabold text-2xl">
@@ -30,4 +30,4 @@ function Topbar() {
   );
 }
 
-export default Topbar;
+export default AuthNavBar;
