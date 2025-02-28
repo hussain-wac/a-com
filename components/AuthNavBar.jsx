@@ -3,9 +3,9 @@ import Link from "next/link";
 
 function AuthNavBar() {
   return (
-    <div className="flex justify-between items-center p-4 bg-gray-800 text-white">
-      <Link href="/" className="text-2xl font-bold">
-        a-commerce
+    <div className="flex justify-between items-center p-4 bg-blue-400 text-white">
+      <Link href="/" className="text-2xl ">
+        A-com
       </Link>
     </div>
   );
