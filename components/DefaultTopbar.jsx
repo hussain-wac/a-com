@@ -1,32 +1,33 @@
 import React from "react";
 import Link from "next/link";
-import { Search, ShoppingCart } from "lucide-react";
+import { AppBar, Toolbar, Typography, IconButton, Badge, Box, Button } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function DefaultTopbar() {
   return (
-    <header className="bg-blue-600 p-4">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <AppBar position="static" sx={{ backgroundColor: "#1E88E5" }}>
+      <Toolbar sx={{ justifyContent: "space-between" }}>
         {/* Logo Section */}
-        <div className="text-white font-extrabold text-2xl">
-          <Link href="/">E-Shop</Link>
-        </div>
+        <Typography variant="h6" component={Link} href="/" sx={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>
+          E-Shop
+        </Typography>
+
         {/* Icons Section */}
-        <div className="flex items-center space-x-6 text-white">
-          <Link href="/about" className="hover:underline">
+        <Box display="flex" alignItems="center" gap={3}>
+          <Button component={Link} href="/about" sx={{ color: "white" }}>
             About
-          </Link>
-          <div className="relative">
-            <ShoppingCart size={24} />
-            <span className="absolute -top-2 -right-2 bg-red-500 text-xs w-5 h-5 flex items-center justify-center rounded-full">
-              3
-            </span>
-          </div>
-          <Link href="/signup" className="hover:underline">
-            signup
-          </Link>
-        </div>
-      </div>
-    </header>
+          </Button>
+          <IconButton color="inherit">
+            <Badge badgeContent={3} color="error">
+              <ShoppingCartIcon />
+            </Badge>
+          </IconButton>
+          <Button component={Link} href="/signup" sx={{ color: "white" }}>
+            Signup
+          </Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 }
 
