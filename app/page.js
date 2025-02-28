@@ -1,9 +1,8 @@
-import GetProducts from '@/components/GetProducts'
 import React from 'react'
-
+import GetProducts from '../components/GetProducts'
 function Home() {
   return (
-    <div>page</div>
+    <div><GetProducts/></div>
   )
 }
 

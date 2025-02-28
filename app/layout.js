@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import NavBarSwicher from "@/components/NavBarSwitcher";
-
+import NavBarSwicher from "../components/NavBarSwitcher";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
