@@ -1,5 +1,15 @@
-export default function Loading(){
-    return(
-        <div>...Loading</div>
-    )
+import React from 'react';
+import './Loading.css'; // Import the CSS file (adjust the path if needed)
+export default function Loading() {
+  return (
+    <div className="mt-20 flex justify-center">
+      <div className="loadingspinner">
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="square3"></div>
+        <div id="square4"></div>
+        <div id="square5"></div>
+      </div>
+    </div>
+  );
 }
