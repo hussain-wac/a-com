@@ -26,15 +26,15 @@ export default function GetProducts() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
       {products.map((product) => (
-        <div key={product.id} className="border p-4 rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300">
+        <div key={product.id} className="border p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
           <img
             src={product.images[0]} // Image URL from the API
             alt={product.title} // Use product title as alt text
             className="w-full h-60 object-cover rounded-md mb-4"
           />
           <h2 className="text-xl font-semibold mt-2">{product.title}</h2>
-          <p className="text-gray-600 mt-1">${product.price}</p>
-          <p className="text-sm text-gray-500 mt-1">{product.description}</p>
+          <p className="mt-1">${product.price}</p>
+          <p className="text-sm  mt-1">{product.description}</p>
         </div>
       ))}
     </div>
