@@ -8,7 +8,7 @@ import {
   validatePassword,
   validateConfirmPassword,
 } from "../../../util";
-// Create a custom ConfirmPasswordInput component that validates against the password field.
+import Link from "next/link";
 const ConfirmPasswordInput = ({
   name,
   label,
@@ -17,8 +17,6 @@ const ConfirmPasswordInput = ({
   ...rest
 }) => {
   const formApi = useFormApi();
-
-  // Use the imported validation function by passing the current password value from the form.
   const validateConfirm = (value) => {
     const password = formApi.getValue(matchField);
     return validateConfirmPassword(value, password);
@@ -39,7 +37,7 @@ function Signup() {
   const handleSubmit = (values) => {
     console.log("Submitted values:", values);
   };
-
+  
   return (
     <div className="max-w-md mx-auto mt-10 p-6  shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
@@ -80,6 +78,19 @@ function Signup() {
         >
           Sign Up
         </button>
+
+
+        <div className="flex p-2">
+        <p>Already Logged In?</p>
+        <span>
+        <Link
+          className="text-blue-600 ml-3"
+          href='/login'
+        >
+          click here
+        </Link>
+        </span>
+        </div>
       </Form>
     </div>
   );
