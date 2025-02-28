@@ -21,7 +21,7 @@ function DefaultTopbar() {
               3
             </span>
           </div>
-          <Link href="/ " className="hover:underline">
+          <Link href="/signup" className="hover:underline">
             signup
           </Link>
         </div>
